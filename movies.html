@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Movies App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>🍿Movie App🎬</h1>
+      <form>
+        <div class="form">
+          <label for="title">Movie Title🎞"</label>
+          <input
+            id="title"
+            type="text"
+            minlength="2"
+            placeholder="Movie Title" />
+        </div>
+        <div class="form">
+          <label for="title"> Rating⭐️</label>
+          <input
+            id="rating"
+            type="number"
+            min="1"
+            max="10"
+            placeholder="#" />
+        </div>
+        <div class="form">
+          <input
+            id="submitBtn"
+            type="submit" />
+        </div>
+      </form>
+    </div>
+    <ul id="list"></ul>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"></script>
+    <script src="movies.js"></script>
+  </body>
+</html>
