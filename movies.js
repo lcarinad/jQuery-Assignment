@@ -1,14 +1,14 @@
-$("form").on("submit", function (e) {
+$("form").submit(function (e) {
   e.preventDefault();
   let $movieTitle = $("#title").val();
   let $rating = $("#rating").val();
-  //   console.log($movieTitle);
   $("#list").append(
-    `<li id=$("li").length> ${$movieTitle} with a rating of a ${$rating} </li><button id=$("li").length>Delete</button>`
+    `<li> ${$movieTitle} with a rating of a ${$rating} <button class="delete-button">Delete</button></li>`
   );
-  //   console.log($("li").length);
-  $("#li.length")("<button>Delete</button>");
-  // ("click", function () {
-  //       $("li", "button").remove();
-  //     });
+  $("#title").val("");
+  $("#rating").val("");
+});
+
+$("#list").on("click", ".delete-button", function () {
+  $(this).parent().remove();
 });
